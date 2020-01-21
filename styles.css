@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300&display=swap');
+*{
+   font-family: 'Muli', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   -webkit-font-smoothing: antialiased;
+}
+::selection {
+   background: rgba(11, 181, 187, 0.363);
+ }
+::-webkit-selection {
+   background: rgba(11, 181, 187, 0.363);
+ }
+::-moz-selection {
+   background: rgba(11, 181, 187, 0.363);
+ }
+body{
+   height: 100vh;
+   width: 100%;
+   background-image: url('bg.jpg');
+   background-attachment: fixed;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   transition: background 2s ease-in-out;
+   -webkit-transition: background 2s ease-in-out;
+   -moz-transition: background 2s ease-in-out;
+   -ms-transition: background 2s ease-in-out;
+   -o-transition: background 2s ease-in-out;
+}
+@media only screen and(max-width : 400px){
+   body{
+
+      background-position: 50% 100%;
+   }
+}
+#container{
+   object-fit: cover;
+   margin: 5% !important;
+   position: absolute;
+   height: fit-content;
+   width: 90%;
+   background-color: rgba(208,208,208,.5);
+   backdrop-filter: blur(3px);
+   border-radius: 10px;
+}
+#header{
+   text-align: center;
+   font-size: 15vmin;
+}
+#weather-header{
+   text-align: center;
+   font-size: 10vmin;
+   display: none;
+   opacity: 0;
+   transition: opacity .5s ease-in-out;
+   -webkit-transition: opacity .5s ease-in-out;
+   -moz-transition: opacity .5s ease-in-out;
+   -ms-transition: opacity .5s ease-in-out;
+   -o-transition: opacity .5s ease-in-out;
+}
+#weather-header span{
+   color: rgb(221, 174, 18);
+}
+#header span{
+   color: rgb(221, 174, 18);
+   transition: opacity .5s ease-in-out;
+   -webkit-transition: opacity .5s ease-in-out;
+   -moz-transition: opacity .5s ease-in-out;
+   -ms-transition: opacity .5s ease-in-out;
+   -o-transition: opacity .5s ease-in-out;
+}
+#check{
+   width: 25vmin;
+   height: 15vmin;
+   font-size: 5vmin;
+   margin: 0 auto !important;
+   display: block;
+   border: 0px solid black;
+   border-radius: 10px;
+   background: linear-gradient(to right, rgb(15, 209, 161) , rgb(197, 224, 45),  rgb(197, 224, 45), rgb(15, 209, 161) );
+   background-size:200% 200%;
+   background-position: 100% 100%;
+   transition: background .5s ease-in-out;
+   -webkit-transition: background .5s ease-in-out;
+   -moz-transition: background .5s ease-in-out;
+   -ms-transition: background .5s ease-in-out;
+   -o-transition: background .5s ease-in-out;
+}
+#check:hover{
+   background-position: 200% 100%;
+}
+button:focus{
+   outline: none;
+}
+span#data{
+   color: rgb(28, 67, 194);
+   transition: color .5s cubic-bezier(0, 1.1, 0.58, 1);
+   -webkit-transition: color .5s cubic-bezier(0, 1.1, 0.58, 1);
+   -moz-transition: color .5s cubic-bezier(0, 1.1, 0.58, 1);
+   -ms-transition: color .5s cubic-bezier(0, 1.1, 0.58, 1);
+   -o-transition: color .5s cubic-bezier(0, 1.1, 0.58, 1);
+}
+span#data:hover{
+   color: white;
+}
+#icon{
+   font-size: 10vmin;
+}
